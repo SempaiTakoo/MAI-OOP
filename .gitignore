@@ -1,5 +1,7 @@
 #folders
 /.vscode/
+/googletest/
+*/build/*
 
 # Prerequisites
 *.d
