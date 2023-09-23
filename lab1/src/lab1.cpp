@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "task.h"
+#include "lab1.h"
 
 #define BIN_STRING_SIZE (32)
 #define MAX_VALUE (4294967295ULL) // 2^32 - 1

@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "task.h"
+#include "lab1.h"
 
 TEST(TestTask, Zero) {
     std::string s = "00000000000000000000000000000000";

@@ -3,8 +3,8 @@ project(lab1)
 
 add_executable(
     lab1
-    include/task.h
-    src/task.cpp
+    include/lab1.h
+    src/lab1.cpp
 )
 
 target_include_directories(lab1 PRIVATE include)

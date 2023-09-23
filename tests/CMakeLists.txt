@@ -4,8 +4,8 @@ project(tests)
 add_executable(
     lab1_test
     lab1_test.cpp
-    ../lab1/include/task.h
-    ../lab1/src/task.cpp
+    ../lab1/include/lab1.h
+    ../lab1/src/lab1.cpp
 )
 
 find_package(GTest REQUIRED)
