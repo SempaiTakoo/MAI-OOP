@@ -3,6 +3,7 @@ project(lab1)
 
 add_executable(
     lab1
+    src/main.cpp
     include/lab1.h
     src/lab1.cpp
 )
