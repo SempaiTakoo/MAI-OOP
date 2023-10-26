@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-project(MAI_OOP)
+project(mai-oop)
+
+enable_testing()
 
 add_subdirectory(lab1)
 add_subdirectory(lab2)
-add_subdirectory(tests) 
+add_subdirectory(tests)
