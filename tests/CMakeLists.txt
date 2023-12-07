@@ -38,3 +38,26 @@ target_link_libraries(lab2_test PRIVATE GTest::GTest)
 target_include_directories(lab2_test PRIVATE ../lab2/include)
 
 add_test(lab2_test lab2_test)
+
+#add LAB3
+add_executable(
+    lab3_test
+    lab3_test.cpp
+    ../lab3/src/point.cpp
+    ../lab3/src/figure.cpp
+    ../lab3/src/trapezoid.cpp
+    ../lab3/src/rhombus.cpp
+    ../lab3/src/pentagon.cpp
+    ../lab3/src/list.cpp
+    ../lab3/include/point.h
+    ../lab3/include/figure.h
+    ../lab3/include/trapezoid.h
+    ../lab3/include/rhombus.h
+    ../lab3/include/pentagon.h
+    ../lab3/include/list.h
+)
+
+target_link_libraries(lab3_test PRIVATE GTest::GTest)
+target_include_directories(lab3_test PRIVATE ../lab3/include)
+
+add_test(lab3_test lab3_test)
