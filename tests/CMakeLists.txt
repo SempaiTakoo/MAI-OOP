@@ -10,8 +10,8 @@ FetchContent_MakeAvailable(googletest)
 add_library(GTest::GTest INTERFACE IMPORTED)
 target_link_libraries(GTest::GTest INTERFACE gtest_main)
 
-
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_COMPILER "g++-12")
+set(CMAKE_CXX_STANDARD 20)
 
 #add LAB1
 add_executable(
@@ -61,3 +61,20 @@ target_link_libraries(lab3_test PRIVATE GTest::GTest)
 target_include_directories(lab3_test PRIVATE ../lab3/include)
 
 add_test(lab3_test lab3_test)
+
+#add lab4
+add_executable(
+    lab4_test
+    lab4_test.cpp
+    ../lab3/include/point.h
+    ../lab3/include/figure.h
+    ../lab3/include/trapezoid.h
+    ../lab3/include/rhombus.h
+    ../lab3/include/pentagon.h
+    ../lab3/include/list.h
+)
+
+target_link_libraries(lab4_test PRIVATE GTest::GTest)
+target_include_directories(lab4_test PRIVATE ../lab4/include)
+
+add_test(lab4_test lab4_test)
