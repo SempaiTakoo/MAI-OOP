@@ -61,3 +61,18 @@ target_link_libraries(lab3_test PRIVATE GTest::GTest)
 target_include_directories(lab3_test PRIVATE ../lab3/include)
 
 add_test(lab3_test lab3_test)
+
+#add LAB5
+add_executable(
+    lab5_test
+    lab5_test.cpp
+    ../lab5/include/iterator.h
+    ../lab5/include/const_iterator.h
+    ../lab5/include/allocator.h
+    ../lab5/include/stack.h
+)
+
+target_link_libraries(lab5_test PRIVATE GTest::GTest)
+target_include_directories(lab5_test PRIVATE ../lab5/include)
+
+add_test(lab5_test lab5_test)
