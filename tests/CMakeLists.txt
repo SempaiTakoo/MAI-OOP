@@ -76,3 +76,28 @@ target_link_libraries(lab5_test PRIVATE GTest::GTest)
 target_include_directories(lab5_test PRIVATE ../lab5/include)
 
 add_test(lab5_test lab5_test)
+
+#add LAB6
+add_executable(
+    lab6_test
+    lab6_test.cpp
+    ../lab6/src/npc.cpp
+    ../lab6/src/factory.cpp
+    ../lab6/src/errant_knight.cpp
+    ../lab6/src/slaver.cpp
+    ../lab6/src/squirrel.cpp
+    ../lab6/src/observer.cpp
+    ../lab6/src/visitors.cpp
+    ../lab6/include/npc.h
+    ../lab6/include/factory.h
+    ../lab6/include/errant_knight.h
+    ../lab6/include/slaver.h
+    ../lab6/include/squirrel.h
+    ../lab6/include/observer.h
+    ../lab6/include/visitors.h
+)
+
+target_link_libraries(lab6_test PRIVATE GTest::GTest)
+target_include_directories(lab6_test PRIVATE ../lab6/include)
+
+add_test(lab6_test lab6_test)
